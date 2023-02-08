@@ -1,0 +1,458 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    src: url("../fonts/tt0855m_.ttf");
+    font-family: "light";
+}
+
+
+@font-face {
+    src: url("../fonts/tt0861m_.ttf");
+    font-family: "dark";
+}
+
+@font-face {
+    src: url("../fonts/zapf-calligraphic-801-bold-italic-bt.ttf");
+    font-family: "Braxy";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Braxy;
+}
+
+p {
+    font-family: light;
+}
+
+
+.secondheader {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-isaac-hermar-12116867.jpg) repeat fixed 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.abtheader {
+
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/abtushead.jpg) repeat fixed 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.proheader {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/produc.jpg) repeat fixed 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.contheader {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cont.jpg) repeat fixed 100%;
+    background-size: cover;
+    background-position: 0%;
+    position: relative;
+}
+
+.abtcontentheader {
+
+    height: 70vh;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 0.5px);
+    background-size: 17px 17px;
+    position: relative;
+}
+
+.contentheader {
+
+    height: 100vh;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 0.5px);
+    background-size: 17px 17px;
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(41 37 36);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    list-style: none;
+    line-height: none !important;
+}
+
+a {
+    margin-bottom: 0;
+    text-decoration: none;
+    line-height: none !important;
+}
+
+header .logo {
+    /* font-weight: bolder; */
+    /* font-size: 25px; */
+    color: #333;
+}
+
+header a img {
+    max-width: 80%;
+    -webkit-box-shadow: 2px 90px 0 rgb(0 0 0 / 5%);
+    box-shadow: 2px 2px 0 rgb(0 0 0 / 5%);
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 5px 20px;
+    color: rgb(255, 255, 255);
+    display: block;
+    text-transform: uppercase;
+    font-family: dark;
+}
+
+header .navbar ul li a:hover {
+    border-top: 2px solid rgb(173, 137, 4);
+    border-bottom: 2px solid rgb(173, 137, 4);
+    text-shadow: 2px 4px #000000;
+    color: white;
+}
+
+.active {
+    border-top: 2px solid rgb(173, 137, 4);
+    border-bottom: 2px solid rgb(173, 137, 4);
+    text-shadow: 2px 4px #000000;
+    color: white;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 250px;
+    background: #fff;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba (0, 0, 0, 0.1);
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+
+}
+
+header .navbar ul li:focus-within>ul,
+header .navbar ul li:hover>ul {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+
+}
+
+
+.texthead {
+    position: absolute;
+
+    color: white;
+
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.texthead h4 {
+    font-family: light;
+    font-size: 50px;
+    /* font-weight: 50px; */
+}
+
+#typed {
+    font-family: light;
+    font-size: 50px;
+    -webkit-box-shadow: 2px 2px 0 rgb(0 0 0 / 5%);
+    box-shadow: 2px 2px 0 rgb(0 0 0 / 5%);
+}
+
+#typed::after {
+    content: "|";
+    color: rgb(255, 201, 23);
+    display: inline;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.texthead h2 {
+    font-family: dark;
+    font-size: 100px;
+    font-weight: 50px;
+    text-shadow: 2px 6px #000000;
+    /* animation-name: brandname; */
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes brandname {
+    0% {
+        color: rgb(173, 137, 4);
+    }
+
+    25% {
+        color: rgb(255, 255, 255);
+    }
+
+    50% {
+        color: rgb(173, 137, 4);
+    }
+
+    75% {
+        color: rgb(255, 255, 255);
+    }
+
+    100% {
+        color: rgb(173, 137, 4);
+    }
+}
+
+.onesec {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/onesec.jpg) repeat 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.onesecabt {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/abtusimg.jpg) repeat 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.whychoose {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/whychoose.jpg) repeat 100%;
+    background-size: cover;
+  position: relative;
+}
+
+footer {
+    height: auto;
+    background: linear-gradient(#000000b3, rgba(0, 0, 0, 0.7)), url(../images/onesec_two.jpg);
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.parag{
+    position: relative;
+}
+.parag::after{
+    content: "";
+    display: inline-block;
+    width: 4.5vw;
+    height: 10px;
+    position: absolute;
+    bottom: -1vw;
+    left: 0;
+    background-image: url(../images/break.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+@media(max-width:991px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(33, 25, 7, 4);
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header label {
+        display: initial;
+        color: white;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        background: rgb(0, 0, 0);
+        color: #eee;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+
+    }
+
+    header .navbar ul li ul li {
+        background: #eee;
+
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+
+    }
+
+    #menu-bar:checked~.navbar {
+        display: initial;
+    }
+
+    header a img {
+        max-width: 70%;
+        -webkit-box-shadow: 2px 90px 0 rgb(0 0 0 / 5%);
+        box-shadow: 2px 2px 0 rgb(0 0 0 / 5%);
+        float: right;
+    }
+
+    #typed {
+        font-family: light;
+        font-size: 25px;
+        -webkit-box-shadow: 2px 2px 0 rgb(0 0 0 / 5%);
+        box-shadow: 2px 2px 0 rgb(0 0 0 / 5%);
+    }
+
+    .texthead h2 {
+        font-family: dark;
+        font-size: 50px;
+        font-weight: 50px;
+
+    }
+
+    .secondheader {
+        height: 100vh!important;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/resp/home.jpg) repeat fixed 100%;
+        background-size: cover;
+        position: relative;
+    }
+    .abtheader {
+
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/resp/headabt.jpg) repeat fixed 100%;
+        background-size: cover;
+        background-position: 5;
+        position: relative;
+    }
+
+    .onesec {
+
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/resp/abt.jpg) 100%;
+        background-size: cover;
+    }
+
+    .proheader {
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/resp/prod.jpg) repeat fixed 100%;
+        background-size: cover;
+    }
+
+    .whychoose {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/resp/whychoose.jpg) repeat fixed 100%;
+        background-size: cover;
+
+    }
+    .contheader {
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/resp/headcont.jpg) repeat fixed 100%;
+        background-size: cover;
+        background-position: 0%;
+        position: relative;
+    }
+    .abtcontentheader {
+
+        height: 100vh;
+        background-image: radial-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 0.5px);
+        background-size: 17px 17px;
+        position: relative;
+    }
+
+    .introsection p {
+        padding: 0;
+    }
+    .parag::after{
+        content: "";
+        display: inline-block;
+        width: 4.5vw;
+        height: 10px;
+        position: absolute;
+        bottom: -3vw;
+        left: 0;
+        background-image: url(../images/break.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    
+    }
+    .contentheader {
+
+        height: 100vh;
+        background-image: radial-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 0.5px);
+        background-size: 17px 17px;
+        position: relative;
+    }
+
+}

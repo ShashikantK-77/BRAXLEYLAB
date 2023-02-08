@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Braxleylab</title>
+    <meta name="description" content=" We at BRAXLEY LAB Pvt Ltd believe in improving quality of life by
+    offering healthcare solutions that cares for you.">
+  <meta name="keywords" content="BRAXLEY LAB Pvt Ltd, BRAXLEY,BRAXLEY LAB ">
+  <meta name="author" content="BRAXLEY LAB">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./css/animated.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"
+      integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- header hero section started -->
+    <div class="contheader">
+      <header>
+        <input type="checkbox" id="menu-bar" />
+        <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+          <ul>
+            <li><a  href="index.html">home</a></li>
+            <li><a  href="about.html">About us</a></li>
+            <!-- <li><a href="#">services+</a>
+                    <ul>
+                        <li><a href="#">One</a></li>
+                        <li><a href="#">Two+</a>
+                        <ul>
+                            <li><a href="#">amenu</a></li>
+                            <li><a href="#">bmenu</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#">Three</a></li>
+                    </ul>
+                    
+                    
+                    </li> -->
+            <li><a href="./products.html">products</a></li>
+            <!-- <li><a href="#">Plants</a></li> -->
+            <li><a class="active" href="./contact.html">contact</a></li>
+          </ul>
+        </nav>
+        <a href="" class="logo">
+          <img src="./images/BraxleyLablogo.png" alt="" />
+        </a>
+      </header>
+      <div class="abtcontentheader">
+        <div class="texthead">
+          <div id="typed-strings">
+            <h3>CONTACT US </h3>
+          </div>
+          <span id="typed"></span>
+          <h2>BRAXLEY LAB</h2>
+        </div>
+      </div>
+    </div>
+    <!-- header hero section ended -->
+
+
+
+     <!-- contactqoute section started -->
+      <section class="vision ">
+        <div class="h-auto py-12 px-12 bg-stone-800 text-center ">
+          <P class=" text-white text-2xl wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s"> <span class="text-xl">CONTACT US<br> </span>  We like to solve problems by talking to people, so don’t hesitate to get in touch.
+           <br> Drop us a message, give us an email or pick up the phone. We’ll be happy to help.</P>
+        </div>
+      </section>
+      <!-- contactqoute section ended -->
+
+     <!-- form section started -->
+      <section class="contact text-stone-700 p-12 ">
+
+     <form class="w-full  max-w-4xl justify-center" action="./contactpage.php" method="post">
+        <div class="flex flex-wrap  -mx-3 mb-6 mx-auto">
+          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+              Name
+            </label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            name = "name"
+            id="grid-first-name" type="text" placeholder="Name">
+          
+          </div>
+          <div class="w-full md:w-1/2 px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+              ADDRESS
+            </label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            name = "ADDRESS"
+            id="grid-last-name" type="text" placeholder="ADDRESS">
+          </div>
+        </div>
+        <div class="flex  flex-wrap -mx-3 mb-6">
+          <div class="w-full px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+              E-mail
+            </label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            name = "email"
+            id="email" type="email" placeholder="Add Your Email">
+          
+          </div>
+        </div>
+        <div class="flex  flex-wrap -mx-3 mb-6">
+          <div class="w-full px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+              Message
+            </label>
+            <textarea class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 "
+            name = "message"
+            id="message"></textarea>
+           
+          </div>
+        </div>
+        <div class="md:flex md:items-center">
+          <div class="md:w-1/3">
+            <button class="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
+              Send
+            </button>
+          </div>
+          <div class="md:w-2/3"></div>
+        </div>
+      </form>
+
+      <h2 class="text-4xl py-4"> <ion-icon name="mail-open-outline"></ion-icon> braxleylab@gmail.com | <ion-icon name="call-outline"></ion-icon>  9881073522 / 9403131780</h2>
+
+    </section>
+
+     <!-- form section ended -->
+
+     <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.358375871444!2d73.89953081471995!3d18.46741918743993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2953cbc2c7455%3A0x9cd83faccdb3055!2sReflex%20Arts%20India%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1654066269879!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.323035105695!2d73.86190571471987!3d18.469021287438984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb44900149f7%3A0x5b2fcbb207015523!2sBraxley%20Labs%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1656132187816!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- footer section started -->
+    <footer class="lg:p-12">
+      <div class="grid w-6/6">
+        <div
+          class="grid lg:w-3/6 md:w-3/6 sm:w-6/6 bg-stone-800 lg:h-auto md:h-auto sm:auto m-2 p-4"
+        >
+        <p class="text-2xl text-white">We take responsibility of your health.</p>
+        
+          <p class="text-white">
+            We deliver better outcomes for patients through science-based
+            innovation in growing areas of healthcare. We are Braxley Lab, and
+            we are reimagining medicine.
+          </p>
+        </div>
+
+        <div class="grid lg:w-3/6 md:w-3/6 sm:w-6/6 bg-stone-500 m-2 p-4">
+          <p class="text-2xl">Have any question or need any Consultation?</p>
+          <div class="grid lg:grid-cols-3">
+            <p>
+              <ion-icon name="mail-open-outline"></ion-icon> braxleylab@gmail.com
+            </p>
+            <p><ion-icon name="call-outline"></ion-icon> 9881073522 / 9403131780</p>
+            <p>
+              <ion-icon name="location-outline"></ion-icon> Pune,Maharashtra
+            </p>
+          </div>
+          <p>
+            For order, delivery or support contact us with any of our emails.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <p class="bg-stone-900 px-12 text-white py-2 lg:text-left sm:text-center">
+      Copyright 2022 © Braxley Lab Pvt Ltd. | Designed By
+      <a href="https://reflexarts.in/" target="_blank">ReflexArts</a>
+    </p>
+
+    <!-- <div class=" bg-red-500 sm:bg-green-500 md:bg-blue-500 lg:bg-pink-500 xl:bg-teal-500 w-36 h36"> dgcdh</div> -->
+    <!-- footer section ended -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      var type = new Typed("#typed", {
+        stringsElement: "#typed-strings",
+        typeSpeed: 50,
+        startDelay: 1200,
+        backSpeed: 20,
+        loop: true,
+
+        loopCount: Infinity,
+        showCursor: false,
+        attr: null,
+      });
+    </script>
+              <script src="./js/animation.js"></script>
+  </body>
+</html>
